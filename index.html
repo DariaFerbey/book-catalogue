@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Catalogue</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="header">
+    <h1>Online Book Catalogue</h1>
+    <p>Browse and discover books</p>
+</header>
+
+<nav class="filters">
+    <input
+        type="text"
+        id="searchInput"
+        class="search-box"
+        placeholder="Search by title..."
+    >
+
+    <select id="categoryFilter" class="select-box">
+        <option value="all">All Categories</option>
+        <option value="Programming">Programming</option>
+        <option value="Science">Science</option>
+        <option value="Business">Business</option>
+    </select>
+</nav>
+
+<main class="container">
+
+    <section class="catalog-info">
+        <h2>Catalogue</h2>
+        <p>Visible items: <span id="itemCount">6</span></p>
+    </section>
+
+    <section class="catalog-grid" id="catalog">
+
+        <article class="book-card" data-category="Programming">
+            <h3>JavaScript Essentials</h3>
+            <p>Author: John Smith</p>
+            <p>Category: Programming</p>
+            <p class="price">$29</p>
+        </article>
+
+        <article class="book-card" data-category="Programming">
+            <h3>HTML & CSS Guide</h3>
+            <p>Author: Sarah Brown</p>
+            <p>Category: Programming</p>
+            <p class="price">$24</p>
+        </article>
+
+        <article class="book-card" data-category="Science">
+            <h3>Physics Explained</h3>
+            <p>Author: Alan White</p>
+            <p>Category: Science</p>
+            <p class="price">$31</p>
+        </article>
+
+        <article class="book-card" data-category="Science">
+            <h3>The Universe</h3>
+            <p>Author: Emma Green</p>
+            <p>Category: Science</p>
+            <p class="price">$28</p>
+        </article>
+
+        <article class="book-card" data-category="Business">
+            <h3>Startup Fundamentals</h3>
+            <p>Author: Robert King</p>
+            <p>Category: Business</p>
+            <p class="price">$35</p>
+        </article>
+
+        <article class="book-card" data-category="Business">
+            <h3>Leadership Skills</h3>
+            <p>Author: Laura Scott</p>
+            <p>Category: Business</p>
+            <p class="price">$27</p>
+        </article>
+
+    </section>
+
+</main>
+
+<footer class="footer">
+    <p>© 2026 Online Book Catalogue</p>
+</footer>
+
+<script src="js/app.js" ></script>
+</body>
+</html>
